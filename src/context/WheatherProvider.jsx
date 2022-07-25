@@ -27,9 +27,9 @@ const WheatherProvider = ({children}) => {
         setNoResult(false)
         try {
             const {city, country} = search
-            //const apiId = import.meta.env.VITE_API_KEY
-            const apiId = 'd35f9228ea4e9118bf7de6634c263273'
-            const url = `http://api.openweathermap.org/geo/1.0/direct?q=${city},${country}&limit=1&appid=${apiId}`
+            const apiId = import.meta.env.VITE_API_KEY
+            //const apiId = 'd35f9228ea4e9118bf7de6634c263273'
+            const url = `https://api.openweathermap.org/geo/1.0/direct?q=${city},${country}&limit=1&appid=${apiId}`
             const {data}  = await axios(url)
             const {lon, lat}  = data[0]
             const wheatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiId}`
