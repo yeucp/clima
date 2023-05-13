@@ -23,7 +23,7 @@ const Form = () => {
                 onSubmit={handleSubmit}
             >
                 <div className="campo">
-                    <label htmlFor="city">Cuidad</label>
+                    <label htmlFor="city">Ciudad</label>
                     <input
                         type="text"
                         id="city"

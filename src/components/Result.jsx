@@ -8,7 +8,7 @@ const Result = () => {
     return (
         
         <div className="contenedor clima">
-            <h2>El clime de {name} es: </h2>
+            <h2>El clima de {name} es: </h2>
             <p>
                 {(main.temp - kelvin).toFixed(2)} <span>&#x2103;</span>
             </p>
